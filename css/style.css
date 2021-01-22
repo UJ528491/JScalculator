@@ -1,0 +1,140 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: #000;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 2rem;
+}
+
+div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  border-radius: 20px;
+}
+
+div:active {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+  opacity: 0.9;
+}
+
+.calculator {
+  display: -ms-grid;
+  display: grid;
+  grid-template: ". . . clear" 5rem "num7 num8 num9 plus" 5rem "num4 num5 num6 minus" 5rem "num1 num2 num3 multi" 5rem "num0 num0 equal divi" 5rem /10rem 10rem 10rem 10rem;
+  gap: 0.5rem;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calculator div:hover {
+  opacity: 95%;
+  cursor: pointer;
+}
+
+.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  height: 5rem;
+  width: 30rem;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.clear {
+  grid-area: clear;
+  background: #a8aab0;
+}
+
+.number {
+  background: #343436;
+}
+
+#num0 {
+  grid-area: num0;
+}
+
+#num1 {
+  grid-area: num1;
+}
+
+#num2 {
+  grid-area: num2;
+}
+
+#num3 {
+  grid-area: num3;
+}
+
+#num4 {
+  grid-area: num4;
+}
+
+#num5 {
+  grid-area: num5;
+}
+
+#num6 {
+  grid-area: num6;
+}
+
+#num7 {
+  grid-area: num7;
+}
+
+#num8 {
+  grid-area: num8;
+}
+
+#num9 {
+  grid-area: num9;
+}
+
+#equal {
+  grid-area: equal;
+}
+
+.op {
+  background: #007acc;
+}
+
+#plus {
+  grid-area: plus;
+}
+
+#minus {
+  grid-area: minus;
+}
+
+#multi {
+  grid-area: multi;
+}
+
+#divi {
+  grid-area: divi;
+}
